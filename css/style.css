@@ -1,0 +1,211 @@
+*{
+    margin-bottom: 0px !important;
+}
+.titulos,.fig-video{
+    display: block;
+    position:absolute;
+    left: 0px;
+}
+
+.titulos,.fig-video,.fig-video video,img,.centralizar{width: 100%;}
+
+.titulos{
+    top: 0px;
+    z-index: 1;
+    flex-direction: column;  
+    justify-content: flex-start;
+    color: rgba(10, 10, 10, 0.95);
+    padding-top: 10vh;
+}
+
+.titulos,.centralizar{height: 100%;}
+
+.titulos,.centralizar{display: flex;}
+
+.titulos,.centralizar{align-items: center;}
+
+.fig-video{
+    margin-bottom: 50px;
+    bottom: 0px;
+    z-index: 0;
+}
+
+.fig-video video{
+    height: auto;
+}
+
+.section-big{
+    min-height: 100vh;
+}
+
+.section-big2{
+    min-height: 90vh;
+    padding-top: 5vh;
+}
+
+.titulos h1{
+    font-size:clamp(12px,2em,100px);
+    font-weight: bolder !important;
+}
+
+.titulos h2{
+    font-size: clamp(12px,5em,100px);
+    font-weight: bolder !important;
+}
+
+#armazenamento{
+    text-align: center;
+    font-size: clamp(12px,2em,1000px);
+    color: rgba(10, 10, 10, 0.95);
+}
+
+#armazenamento em{
+    font-size: 52vw;
+    font-style: normal;
+    line-height: 0.8;
+    letter-spacing: -10px;
+}
+
+#frase-armazenamento{
+    margin-left:55vw;
+    width:30vw;
+}
+
+img{
+    height: auto;
+}
+
+.brilho .direita{
+    width: 30%;
+    float: right;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.brilho .esquerda{
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+}
+
+.brilho{
+    font-size: 1.25em;
+    color: rgba(10, 10, 10, 0.95);
+}
+
+.brilho em{
+    font-size:clamp(12px,5vw,100px);
+    font-style: normal;
+    line-height: 0.95;
+    font-weight: 700;
+}
+
+#oled{
+    font-size:clamp(12px,3vw,100px);
+    font-weight:600 ;
+    line-height: 0.95;
+}
+
+#descricao{
+    font-size:clamp(12px,5vw,100px);
+    font-style: normal;
+    font-weight: 700;
+    color: rgba(133, 126, 112,0.95);
+}
+
+#descricao em{
+    color: rgba(10, 10, 10, 0.95);
+    font-style: normal;
+}
+
+#div_tabela{
+    height:90vh;
+}
+
+.centralizar{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+.h1-form{
+    margin-bottom: 60px;
+    font-weight: bolder !important;
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px;
+}
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+
+}
+
+.card{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.margin{
+    margin-top: 5px;
+}
+
+label{
+    margin:5px;
+    margin-bottom: 10px;
+    font-size: 1.25em;
+}
+
+.section-big3{
+    min-height: 60vh;
+}
+
+footer{
+    background-color: rgba(10, 10, 10, 0.95);
+    color: rgba(133, 126, 112,0.95);
+    padding: 50px;
+    margin-top: 50px;
+}
+@media screen and (max-width:650px) {
+    #frase-armazenamento{
+        margin-left: 0px;
+        width: 100%;
+    }
+    #armazenamento em{
+        line-height: 1;
+        font-size: 53vw;
+    }
+    .brilho .direita{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 35px;
+    }
+    .brilho .esquerda{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .brilho{font-size:clamp(12px,1.7em,100px);}
+    .brilho em,#descricao{
+        font-size:clamp(12px,10vw,100px);
+        line-height: 1;
+    }
+    #oled{
+        font-size:clamp(12px,6vw,100px);
+        line-height: 1;
+    }
+
+    #div_tabela{
+        height: auto;
+    }
+    .centraliza-mobile{
+        display: flex;
+        justify-content: center;
+    }
+}
