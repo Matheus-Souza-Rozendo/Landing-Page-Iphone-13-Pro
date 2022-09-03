@@ -11,9 +11,6 @@ const idade=document.getElementById("idade");
 let erros_element = [erroNome,erroSobrenome,erroEmail,erroIdade];
 let valido;
 
-//pattern="[a-zA-Z\u00C0-\u00FF]"
-
-
 for(let i=0;i<input_element.length;i++){
 input_element[i].addEventListener("keyup", () => {
     input_element[i].setAttribute("value", input_element[i].value);
@@ -87,6 +84,21 @@ function validaIdade(){
         setErromsg(erroIdade,"Digite apenas números");
         valido=false;
     }
-
-
 }
+
+nome.addEventListener("blur",()=>{
+    validarCampo(nome,erroNome,"- Digite apenas Letras");
+})
+
+sobrenome.addEventListener("blur",()=>{
+    validarCampo(sobrenome,erroSobrenome,"- Digite apenas Letras");
+})
+
+email.addEventListener("blur",()=>{
+    validarCampo(email,erroEmail,"");
+});
+
+idade.addEventListener("blur",()=>{
+    validarCampo(idade,erroIdade,"");
+    validaIdade();
+})
