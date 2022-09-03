@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple - IPhone 13 Pro</title>
+    <base href="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" href="https://aux.iconspalace.com/uploads/apple-icon-256.png" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://matheus-souza-rozendo.github.io/Landing-Page-Iphone-13-Pro/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <meta name="keywords" content="landing page, iphone, Iphone 13 pro, front-end">
     <meta name="description" content="Landing Page conceitual criada para o lançamento do Iphone 13 Pro no Brasil.">
     <meta name="author" content="Matheus Souza Rozendo">
@@ -27,7 +28,7 @@
                 <div style="flex: grow 5;"></div>
             </div>
             <figure class="fig-video ">
-                <video src="https://matheus-souza-rozendo.github.io/Landing-Page-Iphone-13-Pro/videos/iphone13-video.mp4" class="img-fluid" autoplay muted width="2560" height="900">Video
+                <video src="/videos/iphone13-video.mp4" class="img-fluid" autoplay muted width="2560" height="900">Video
                     não suportado</video>
             </figure>
         </section>
@@ -49,8 +50,8 @@
         <section class="container-fluid section-big2 brilho">
             <figure>
                 <picture>
-                    <source media="(max-width: 600px)" srcset="https://matheus-souza-rozendo.github.io/Landing-Page-Iphone-13-Pro/imagens/iphone-brilho.jpg">
-                    <img src="https://matheus-souza-rozendo.github.io/Landing-Page-Iphone-13-Pro/imagens/iphone-brilho.jpg" alt="brilho iphone" width="1306" height="426">
+                    <source media="(max-width: 600px)" srcset="/imagens/iphone-brilho.jpg">
+                    <img src="/imagens/iphone-brilho.jpg" alt="brilho iphone" width="1306" height="426">
                 </picture>
             </figure>
             <div>
@@ -81,15 +82,15 @@
             </div>
             <figure style="margin-top:30px ;">
                 <picture>
-                    <source media="(max-width:600px )" srcset="https://matheus-souza-rozendo.github.io/Landing-Page-Iphone-13-Pro/imagens/camera-iphone.webp">
-                    <img src="https://matheus-souza-rozendo.github.io/Landing-Page-Iphone-13-Pro/imagens/camera-iphone.png" alt="camera iphone" width="2442" height="560">
+                    <source media="(max-width:600px )" srcset="/imagens/camera-iphone.webp">
+                    <img src="/imagens/camera-iphone.png" alt="camera iphone" width="2442" height="560">
                 </picture>
             </figure>
         </section>
         <hr>
         <section class="container-fluid section-big2 brilho">
             <figure class="esquerda">
-                <img src="https://matheus-souza-rozendo.github.io/Landing-Page-Iphone-13-Pro/imagens/tamanho-iphone.png" alt="tamanho iphone">
+                <img src="/imagens/tamanho-iphone.png" alt="tamanho iphone">
             </figure>
             <div class="direita" id="div_tabela">
                 <div class="centralizar">
@@ -127,7 +128,7 @@
                                     <div class="row separa">
                                         <div class="col-md-6">
                                             <div class="input-contain separa">
-                                                <input type="text" id="nome" name="nome" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="2" maxlength="200" required >
+                                                <input type="text" id="nome" name="nome" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="2" maxlength="200" required aria-describedby="erro-nome">
                                                 <label class="placeholder-text" for="nome" id="placeholder-fname">
                                                     <div class="text">Nome *</div>
                                                 </label>
@@ -136,7 +137,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="input-contain separa">
-                                                <input type="text" id="sobrenome" name="sobrenome" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="2" maxlength="200" required >
+                                                <input type="text" id="sobrenome" name="sobrenome" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="2" maxlength="200" required aria-describedby="erro-sobrenome">
                                                 <label class="placeholder-text" for="sobrenome" id="placeholder-fname">
                                                     <div class="text">Sobrenome *</div>
                                                 </label>
@@ -147,7 +148,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-contain separa">
-                                                <input type="email" id="email" name="email" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="10" maxlength="200" required>
+                                                <input type="email" id="email" name="email" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="10" maxlength="200" required aria-describedby="erro-mail">
                                                 <label class="placeholder-text" for="email" id="placeholder-fname">
                                                     <div class="text">Email *</div>
                                                 </label>
@@ -156,8 +157,8 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="input-contain separa">
-                                                <input type="text" id="idade" name="idade" autocomplete="off" value="" minlength="1" maxlength="3" required >
-                                                <label class="placeholder-text" for="fname" id="placeholder-fname">
+                                                <input type="text" id="idade" name="idade" autocomplete="off" value="" minlength="1" maxlength="3" required autocomplete="age" aria-describedby="erro-idade">
+                                                <label class="placeholder-text" for="idade" id="placeholder-fname">
                                                     <div class="text">Idade*</div>
                                                 </label>
                                             </div>
@@ -201,5 +202,5 @@
         </address>
     </footer>
 
-<script src="https://matheus-souza-rozendo.github.io/Landing-Page-Iphone-13-Pro/js/form.js"></script>
+<script src="/js/form.js"></script>
 </html>
