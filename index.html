@@ -128,7 +128,7 @@
                                     <div class="row separa">
                                         <div class="col-md-6">
                                             <div class="input-contain separa">
-                                                <input type="text" id="nome" name="nome" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="2" maxlength="200" required >
+                                                <input type="text" id="nome" name="nome" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="2" maxlength="200" required aria-describedby="erro-nome">
                                                 <label class="placeholder-text" for="nome" id="placeholder-fname">
                                                     <div class="text">Nome *</div>
                                                 </label>
@@ -137,7 +137,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="input-contain separa">
-                                                <input type="text" id="sobrenome" name="sobrenome" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="2" maxlength="200" required >
+                                                <input type="text" id="sobrenome" name="sobrenome" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="2" maxlength="200" required aria-describedby="erro-sobrenome">
                                                 <label class="placeholder-text" for="sobrenome" id="placeholder-fname">
                                                     <div class="text">Sobrenome *</div>
                                                 </label>
@@ -148,7 +148,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-contain separa">
-                                                <input type="email" id="email" name="email" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="10" maxlength="200" required>
+                                                <input type="email" id="email" name="email" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="10" maxlength="200" required aria-describedby="erro-mail">
                                                 <label class="placeholder-text" for="email" id="placeholder-fname">
                                                     <div class="text">Email *</div>
                                                 </label>
@@ -157,8 +157,8 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="input-contain separa">
-                                                <input type="text" id="idade" name="idade" autocomplete="off" value="" minlength="1" maxlength="3" required >
-                                                <label class="placeholder-text" for="fname" id="placeholder-fname">
+                                                <input type="text" id="idade" name="idade" autocomplete="off" value="" minlength="1" maxlength="3" required autocomplete="age" aria-describedby="erro-idade">
+                                                <label class="placeholder-text" for="idade" id="placeholder-fname">
                                                     <div class="text">Idade*</div>
                                                 </label>
                                             </div>
