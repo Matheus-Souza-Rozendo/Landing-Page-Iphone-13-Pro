@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple - IPhone 13 Pro</title>
+    <base href="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" href="https://aux.iconspalace.com/uploads/apple-icon-256.png" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <meta name="keywords" content="landing page, iphone, Iphone 13 pro, front-end">
+    <meta name="description" content="Landing Page conceitual criada para o lançamento do Iphone 13 Pro no Brasil.">
+    <meta name="author" content="Matheus Souza Rozendo">
 </head>
 
 <body style="overflow-x: hidden; font-family: 'Roboto', sans-serif; max-width:2000px;">
@@ -115,85 +119,77 @@
             <div class=" text-center mt-5 ">
                 <h2 class="h1-form" >Contato</h2>
             </div>
-            <div class="row ">
+            <div class="row">
                 <div class="col-lg-7 mx-auto">
                     <div class="card mt-2 mx-auto p-4 bg-light">
                         <div class="card-body bg-light">
                             <div class="container">
-                                <form id="contact-form" role="form">
-                                    <div class="controls">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_name">Nome</label>
-                                                    <input id="form_name" type="text" name="name" class="margin form-control"
-                                                        placeholder="Nome*" required="required"
-                                                        data-error="Firstname is required.">
-                                                </div>
+                                <form id="contact-form" role="form" novalidate method="get">
+                                    <div class="row separa">
+                                        <div class="col-md-6">
+                                            <div class="input-contain separa">
+                                                <input type="text" id="nome" name="nome" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="2" maxlength="200" required >
+                                                <label class="placeholder-text" for="nome" id="placeholder-fname">
+                                                    <div class="text">Nome *</div>
+                                                </label>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_lastname">Sobrenome</label>
-                                                    <input id="form_lastname" type="text" name="surname"
-                                                        class="form-control margin" placeholder="Sobrenome*"
-                                                        required="required" data-error="Lastname is required.">
-                                                </div>
-                                            </div>
+                                            <p id="erro-nome"></p>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_email">Email</label>
-                                                    <input id="form_email" type="email" name="email"
-                                                        class="form-control" placeholder="email*"
-                                                        required="required" data-error="Valid email is required.">
-
-                                                </div>
+                                        <div class="col-md-6">
+                                            <div class="input-contain separa">
+                                                <input type="text" id="sobrenome" name="sobrenome" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="2" maxlength="200" required >
+                                                <label class="placeholder-text" for="sobrenome" id="placeholder-fname">
+                                                    <div class="text">Sobrenome *</div>
+                                                </label>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_age">Idade</label>
-                                                    <input id="form_age" type="number" max="120" min="1" name="age"
-                                                        class="form-control" placeholder="Idade*"
-                                                        required="required" data-error="Valid email is required.">
-
-                                                </div>
-                                            </div>
+                                            <p id="erro-sobrenome"></p>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="form_message">Mensagem </label>
-                                                    <textarea id="form_message" name="message" class="form-control"
-                                                        placeholder="Mensagem" rows="4"
-                                                        data-error="Please, leave us a message."></textarea>
-                                                </div>
-
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-contain separa">
+                                                <input type="email" id="email" name="email" autocomplete="off" value="" aria-labelledby="placeholder-fname" minlength="10" maxlength="200" required>
+                                                <label class="placeholder-text" for="email" id="placeholder-fname">
+                                                    <div class="text">Email *</div>
+                                                </label>
                                             </div>
-
-
-                                            <div class="col-md-12 centraliza-mobile">
-
-                                                <input type="submit" class="btn btn-success btn-send  pt-2 btn-block
-                                " value="Enviar" style="margin-top:10px; max-width:fit-content;">
-
-                                            </div>
-
+                                            <p id="erro-email"></p>
                                         </div>
-
-
+                                        <div class="col-md-6">
+                                            <div class="input-contain separa">
+                                                <input type="text" id="idade" name="idade" autocomplete="off" value="" minlength="1" maxlength="3" required >
+                                                <label class="placeholder-text" for="fname" id="placeholder-fname">
+                                                    <div class="text">Idade*</div>
+                                                </label>
+                                            </div>
+                                            <p id="erro-idade"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row separa">
+                                        <div class="col-md-12">
+                                            <div class="input-contain">
+                                                <label for="form_message">Mensagem </label>
+                                                <textarea id="form_message" name="message" class="form-control"
+                                                    placeholder="Mensagem" rows="4"
+                                                    data-error="Please, leave us a message."></textarea>
+                                            </div>
+    
+                                        </div>
+    
+    
+                                        <div class="col-md-12 centraliza-mobile">
+    
+                                            <input type="submit" class="btn btn-send  pt-2 btn-block
+                            " value="Enviar" style="margin-top:10px; max-width:fit-content;">
+    
+                                        </div>
+    
                                     </div>
                                 </form>
                             </div>
                         </div>
-
-
                     </div>
-                    <!-- /.8 -->
-
                 </div>
-                <!-- /.row-->
-
             </div>
         </div>
     </main>
@@ -206,5 +202,5 @@
         </address>
     </footer>
 
-
+<script src="/js/form.js"></script>
 </html>
